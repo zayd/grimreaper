@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tab Killer</title>
+    <style>
+      body {
+        min-width: 300px;
+        overflow-x: hidden;
+      }
+      #timeText{
+        font-family:Garamond, Georgia, serif;
+        font-size: 2em;
+      }
+
+      #time{
+        padding: 5px;
+        border-radius: 5px;
+        border-top: 1px;
+      }
+
+      .subhead{
+        font-family:Garamond, Georgia, serif;
+        font-size: 1em;
+        color: #3A3A38;
+      }
+
+      input[type="range"] {
+        margin: 5px;
+        border:>2px solid black;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="time">
+      <div class="subhead"> Kill After </div>
+      <form>
+        <input id="timeSlider" type="range" min="1" max="48"></input>
+        <output type="text" id="timeText" value=""></output> Hours
+      </form>
+    </div>
+    <script src="interface.js"></script>
+  </body>
+</html>
+
